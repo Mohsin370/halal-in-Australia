@@ -15,7 +15,7 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 - script: |
-    cd frontend
+    cd backend
     npm install
-    npm run build
+    nodemon index.ts
   displayName: 'npm install and build'
