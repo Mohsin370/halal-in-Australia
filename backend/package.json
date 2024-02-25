@@ -4,7 +4,7 @@
   "description": "backend for halal in Australia",
   "main": "index.ts",
   "scripts": {
-    "test": "node index.ts"
+    "test": "ts-node index.ts"
   },
   "author": "Mohsin",
   "license": "ISC",
