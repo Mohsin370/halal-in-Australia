@@ -12,10 +12,10 @@ pool: home
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '20.9.0'
   displayName: 'Install Node.js'
 - script: |
     cd backend
     npm install
-    nodemon index.ts
+    npm run test
   displayName: 'npm install and build'
