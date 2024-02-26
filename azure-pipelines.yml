@@ -19,3 +19,5 @@ steps:
     npm install
     nodemon index.ts
   displayName: 'npm install and build'
+
+- task: PublishBuildArtifacts@1
