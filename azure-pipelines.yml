@@ -33,4 +33,4 @@ steps:
     archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
     replaceExistingArchive: true
 - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-    artifact: backendartifact
+  artifact: backendartifact
