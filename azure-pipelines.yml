@@ -27,7 +27,7 @@ steps:
 - task: ArchiveFiles@2
   displayName: "Archive files"
   inputs:
-    rootFolderOrFile: "$(backendDirectory)"
+    rootFolderOrFile: "$(System.DefaultWorkingDirectory)'"
     includeRootFolder: false
     archiveType: zip
     archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
@@ -35,6 +35,3 @@ steps:
 
 - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
   artifact: drop
-
-- publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-  artifact: backendartifact
